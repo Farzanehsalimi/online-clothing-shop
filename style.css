@@ -1,33 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Vazir', sans-serif;
-}
-
-
-/* :root {} */
-
-.navbar {
-    gap: 0;
-}
-
-.logo {
-    font-size: 1.6em;
-    font-weight: 500;
-    font-family: Open Sans;
-}
-
-.logo-in {
-    font-weight: 600;
-    color: #888888;
-}
-
-.nav-icons {
-    gap: 1rem;
-}
-
-.nav-icon {
-    /* width: 5rem; */
-}
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Vazir', sans-serif;
+    }
+    /* :root {} */
+    
+    header {
+        top: 0;
+    }
+    
+    .logo {
+        font-size: 1.9em;
+        font-weight: 500;
+        font-family: Open Sans;
+    }
+    
+    .logo-in {
+        font-weight: 600;
+        /* color: #888888; */
+    }
+    
+    .nav-icons {
+        gap: .8rem;
+    }
+    
+    .nav-icon {
+        font-size: 32px;
+    }

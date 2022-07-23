@@ -1,9 +1,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap');
+    @import url('https://v1.fontapi.ir/css/Yekan:400;700');
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: 'Vazir', sans-serif;
+        font-family: 'Yekan', sans-serif;
     }
     
      :root {
@@ -22,7 +23,7 @@
     }
     
     .logo {
-        font-size: 1.9em;
+        font-size: 2.2em;
         font-weight: 500;
         font-family: Open Sans;
     }
@@ -60,7 +61,7 @@
         height: 2px;
         background: #fff;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
         transition: all .5s ease-in-out;
         background-color: #000;
     }
@@ -73,7 +74,7 @@
         height: 2px;
         background: #fff;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
         transition: all .5s ease-in-out;
         background-color: #000;
     }
@@ -100,7 +101,70 @@
     .menu-btn.open .menu-btn__burger::after {
         transform: rotate(-45deg) translate(35px, 35px);
     }
-    
-    .carousel-img {
+    /* .carousel-img {
         width: 350px;
+    } */
+    
+    .product-img {
+        border: 2rem;
     }
+    
+    .button {
+        padding: 16px 80px 16px 80px;
+    }
+    
+    .type-of-product-img {
+        width: 7rem;
+    }
+    
+    .type-of-product:first-child {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    
+    .type-of-product:nth-child(2) {
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    
+    .services {
+        gap: 2rem;
+    }
+    
+    .services-img {
+        width: 3.4rem;
+    }
+    
+    .services,
+    p {
+        text-align: center;
+        font-size: .9em;
+    }
+    
+    .t-o-p-img {
+        width: 10rem;
+    }
+    
+    .sportwear-img {
+        margin: 0 auto;
+        width: 21rem;
+    }
+    
+    .lorem {
+        margin-top: 100rem;
+    }
+    
+    @media (min-width: 576px) {}
+    /* بالای 768 */
+    
+    @media (min-width: 768px) {
+        .button {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 992px) {}
+    
+    @media (min-width: 1200px) {}
+    
+    @media (min-width: 1400px) {}

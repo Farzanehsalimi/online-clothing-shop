@@ -1,170 +1,203 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap');
-    @import url('https://v1.fontapi.ir/css/Yekan:400;700');
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: 'Yekan', sans-serif;
-    }
-    
-     :root {
-        --primaryColor: #4A148C;
-        --mainWhite: #fff;
-        --mainBlack: #000;
-        --mainGreen: #f8faf9;
-        --mainBlue: #f8f9fb;
-        --mainGray: #7d7d7d;
-    }
-    
-    header {
-        position: fixed;
-        z-index: 20;
-        top: 0;
-    }
-    
-    .logo {
-        font-size: 2.2em;
-        font-weight: 500;
-        font-family: Open Sans;
-    }
-    
-    .logo-in {
-        font-weight: 600;
-        /* color: #888888; */
-    }
-    
-    .nav-icons {
-        gap: 1rem;
-    }
-    
-    .nav-icon {
-        font-size: 32px;
-    }
-    
-    .nav-icon:hover {
-        background-color: var(--mainBlack);
-    }
-    
-    .menu-btn {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-    }
-    
-    .menu-btn__burger {
-        width: 30px;
-        height: 2px;
-        background: #fff;
-        border-radius: 5px;
-        /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
-        transition: all .5s ease-in-out;
-        background-color: #000;
-    }
-    
-    .menu-btn__burger::before,
-    .menu-btn__burger::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        background: #fff;
-        border-radius: 5px;
-        /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
-        transition: all .5s ease-in-out;
-        background-color: #000;
-    }
-    
-    .menu-btn__burger::before {
-        transform: translateY(-10px);
-    }
-    
-    .menu-btn__burger::after {
-        transform: translateY(10px);
-    }
-    /* Animation */
-    
-    .menu-btn.open .menu-btn__burger {
-        transform: translateX(-50px);
-        background: transparent;
-        box-shadow: none;
-    }
-    
-    .menu-btn.open .menu-btn__burger::before {
-        transform: rotate(45deg) translate(35px, -35px);
-    }
-    
-    .menu-btn.open .menu-btn__burger::after {
-        transform: rotate(-45deg) translate(35px, 35px);
-    }
-    /* .carousel-img {
+                        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap');
+                        @import url('https://v1.fontapi.ir/css/Yekan:400;700');
+                        * {
+                            box-sizing: border-box;
+                            margin: 0;
+                            padding: 0;
+                            font-family: 'Yekan', sans-serif;
+                        }
+                        
+                         :root {
+                            --primaryColor: #4A148C;
+                            --mainWhite: #fff;
+                            --mainBlack: #000;
+                            --mainGreen: #f8faf9;
+                            --mainBlue: #f8f9fb;
+                            --mainGray: #7d7d7d;
+                        }
+                        
+                        header {
+                            position: fixed;
+                            display: block;
+                            /* z-index: 2; */
+                            top: 0;
+                        }
+                        
+                        nav {
+                            box-shadow: 0px 0px 0px 2px rgb(0 0 0 / 8%);
+                        }
+                        
+                        .logo {
+                            font-size: 2.2em;
+                            font-weight: 500;
+                            font-family: Open Sans;
+                        }
+                        
+                        .logo-in {
+                            font-weight: 600;
+                            /* color: #888888; */
+                        }
+                        
+                        .nav-icons {
+                            gap: 1rem;
+                        }
+                        
+                        .nav-icon {
+                            font-size: 32px;
+                        }
+                        
+                        .nav-icon:hover {
+                            background-color: var(--mainBlack);
+                        }
+                        
+                        .menu-btn {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            cursor: pointer;
+                            transition: all .5s ease-in-out;
+                        }
+                        
+                        .menu-btn__burger {
+                            width: 30px;
+                            height: 2px;
+                            background: #fff;
+                            border-radius: 5px;
+                            /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
+                            transition: all .5s ease-in-out;
+                            background-color: #000;
+                        }
+                        
+                        .menu-btn__burger::before,
+                        .menu-btn__burger::after {
+                            content: '';
+                            position: absolute;
+                            width: 30px;
+                            height: 2px;
+                            background: #fff;
+                            border-radius: 5px;
+                            /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
+                            transition: all .5s ease-in-out;
+                            background-color: #000;
+                        }
+                        
+                        .menu-btn__burger::before {
+                            transform: translateY(-10px);
+                        }
+                        
+                        .menu-btn__burger::after {
+                            transform: translateY(10px);
+                        }
+                        /* Animation */
+                        
+                        .menu-btn.open .menu-btn__burger {
+                            transform: translateX(-50px);
+                            background: transparent;
+                            box-shadow: none;
+                        }
+                        
+                        .menu-btn.open .menu-btn__burger::before {
+                            transform: rotate(45deg) translate(35px, -35px);
+                        }
+                        
+                        .menu-btn.open .menu-btn__burger::after {
+                            transform: rotate(-45deg) translate(35px, 35px);
+                        }
+                        /* .carousel-img {
         width: 350px;
     } */
-    
-    .product-img {
-        border: 2rem;
-    }
-    
-    .button {
-        padding: 16px 80px 16px 80px;
-    }
-    
-    .type-of-product-img {
-        width: 7rem;
-    }
-    
-    .type-of-product:first-child {
-        font-size: 1em;
-        font-weight: 400;
-    }
-    
-    .type-of-product:nth-child(2) {
-        font-size: 1.4em;
-        font-weight: 700;
-    }
-    
-    .services {
-        gap: 2rem;
-    }
-    
-    .services-img {
-        width: 3.4rem;
-    }
-    
-    .services,
-    p {
-        text-align: center;
-        font-size: .9em;
-    }
-    
-    .t-o-p-img {
-        width: 10rem;
-    }
-    
-    .sportwear-img {
-        margin: 0 auto;
-        width: 21rem;
-    }
-    
-    .lorem {
-        margin-top: 100rem;
-    }
-    
-    @media (min-width: 576px) {}
-    /* بالای 768 */
-    
-    @media (min-width: 768px) {
-        .button {
-            display: none;
-        }
-    }
-    
-    @media (min-width: 992px) {}
-    
-    @media (min-width: 1200px) {}
-    
-    @media (min-width: 1400px) {}
+                        
+                        .product-img {
+                            border: 2rem;
+                        }
+                        
+                        .brand-logos {
+                            width: 8%;
+                            opacity: .4;
+                            margin-top: 5rem;
+                        }
+                        
+                        .button {
+                            width: 100%;
+                            padding: 16px 0px 16px 0px;
+                            font-size: 1em;
+                        }
+                        
+                        .type-of-product-img {
+                            width: 7rem;
+                        }
+                        
+                        .farsi-title {
+                            font-size: 1.1em;
+                        }
+                        
+                        .english-title {
+                            font-size: 1.6em;
+                        }
+                        
+                        .services {}
+                        
+                        .services-img {
+                            width: 100%;
+                        }
+                        
+                        .services,
+                        p {
+                            text-align: center;
+                            font-size: .9em;
+                        }
+                        
+                        .t-o-p-img {
+                            width: 100%;
+                        }
+                        
+                        .sportwear-img {
+                            width: 100%;
+                        }
+                        
+                        .lorem {
+                            margin-top: 100rem;
+                        }
+                        /* بالای 576 */
+                        
+                        @media (min-width: 576px) {}
+                        /* زیر 768 */
+                        
+                        @media only screen and (max-width: 768px) {
+                            .brand-logos {
+                                display: none;
+                            }
+                            .button {
+                                margin-top: 4rem;
+                            }
+                        }
+                        
+                        @media (min-width: 768px) {
+                            .button {
+                                display: none !important;
+                            }
+                            .type-of-products {
+                                width: 100%;
+                                justify-content: center;
+                                flex-direction: row !important;
+                            }
+                            .t-o-p-div {
+                                flex-direction: column;
+                                gap: 2rem;
+                            }
+                            .type-of-product-img {
+                                width: 13rem;
+                            }
+                            .services {
+                                gap: 2rem;
+                            }
+                        }
+                        
+                        @media (max-width: 992px) {}
+                        
+                        @media (max-width: 1200px) {}
+                        
+                        @media (max-width: 1400px) {}

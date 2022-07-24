@@ -18,12 +18,13 @@
                         
                         header {
                             position: fixed;
-                            display: block;
+                            /* display: block; */
                             /* z-index: 2; */
                             top: 0;
                         }
                         
                         nav {
+                            padding: 0 !important;
                             box-shadow: 0px 0px 0px 2px rgb(0 0 0 / 8%);
                         }
                         
@@ -40,6 +41,10 @@
                         
                         .nav-icons {
                             gap: 1rem;
+                        }
+                        
+                        .search-icon {
+                            margin-right: 10px;
                         }
                         
                         .nav-icon {
@@ -105,6 +110,10 @@
                         
                         .menu-btn.open .menu-btn__burger::after {
                             transform: rotate(-45deg) translate(35px, 35px);
+                        }
+                        
+                        .carousel {
+                            margin-top: 4rem;
                         }
                         /* .carousel-img {
         width: 350px;
@@ -195,9 +204,20 @@
                                 gap: 2rem;
                             }
                         }
+                        /* زیر 992 */
                         
-                        @media (max-width: 992px) {}
+                        @media (max-width: 992px) {
+                            .nav-t {
+                                display: none;
+                            }
+                        }
                         
-                        @media (max-width: 1200px) {}
+                        @media (min-width: 992px) {
+                            .nav-t {
+                                width: 30px;
+                            }
+                        }
+                        
+                        @media (min-width: 1200px) {}
                         
                         @media (max-width: 1400px) {}

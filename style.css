@@ -18,14 +18,19 @@
                         
                         header {
                             position: fixed;
-                            /* display: block; */
-                            /* z-index: 2; */
                             top: 0;
                         }
                         
                         nav {
                             padding: 0 !important;
-                            box-shadow: 0px 0px 0px 2px rgb(0 0 0 / 8%);
+                            /* box-shadow: 10px 0px 0px 2px rgb(0 0 0 / 8%); */
+                            border-top: 2.2px solid #000;
+                            border-bottom: 1px solid #d3d3d3;
+                        }
+                        
+                        .nav-just-icon {
+                            width: 95%;
+                            margin: 10px 0 0 0;
                         }
                         
                         .logo {
@@ -36,23 +41,48 @@
                         
                         .logo-in {
                             font-weight: 600;
-                            /* color: #888888; */
                         }
                         
                         .nav-icons {
                             gap: 1rem;
                         }
                         
-                        .search-icon {
-                            margin-right: 10px;
-                        }
-                        
                         .nav-icon {
-                            font-size: 32px;
+                            cursor: pointer;
+                            width: 2rem;
+                            font-size: 28px;
                         }
                         
-                        .nav-icon:hover {
-                            background-color: var(--mainBlack);
+                        .search-icon {
+                            margin: 5px 8px 0px 0px;
+                        }
+                        
+                        .nav-bag {
+                            width: 2rem;
+                            background: url(./assets/images/0.nav/bag-icon-white.svg) no-repeat;
+                            display: inline-block;
+                        }
+                        
+                        .nav-bag:hover {
+                            background: url(./assets/images/0.nav/bag-icon-black.svg) no-repeat;
+                        }
+                        
+                        .nav-person {
+                            width: 2rem;
+                            background: url(./assets/images/0.nav/person-icon-white.svg) no-repeat;
+                        }
+                        
+                        .nav-person:hover {
+                            background: url(./assets/images/0.nav/person-icon-black.svg) no-repeat;
+                        }
+                        
+                        .nav-heart {
+                            width: 2rem;
+                            background: url(./assets/images/0.nav/heart-icon-white.svg) no-repeat;
+                        }
+                        
+                        .nav-heart:hover {
+                            background: url(./assets/images/0.nav/heart-icon-black.svg) no-repeat;
                         }
                         
                         .menu-btn {
@@ -71,7 +101,6 @@
                             height: 2px;
                             background: #fff;
                             border-radius: 5px;
-                            /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
                             transition: all .5s ease-in-out;
                             background-color: #000;
                         }
@@ -84,7 +113,6 @@
                             height: 2px;
                             background: #fff;
                             border-radius: 5px;
-                            /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
                             transition: all .5s ease-in-out;
                             background-color: #000;
                         }
@@ -110,6 +138,20 @@
                         
                         .menu-btn.open .menu-btn__burger::after {
                             transform: rotate(-45deg) translate(35px, 35px);
+                        }
+                        /* .heart-person {
+                            margin-top: 6px;
+                        } */
+                        
+                        .list-items {
+                            list-style-type: none;
+                            font-size: .6em;
+                            opacity: .9;
+                            cursor: pointer;
+                        }
+                        
+                        .list-items>li:hover {
+                            color: #2fbbff;
                         }
                         
                         .carousel {
@@ -210,11 +252,26 @@
                             .nav-t {
                                 display: none;
                             }
+                            .list-items {
+                                display: none;
+                            }
                         }
                         
                         @media (min-width: 992px) {
                             .nav-t {
                                 width: 30px;
+                            }
+                            .menu-btn {
+                                display: none;
+                            }
+                            .heart-icon {
+                                font-size: 28px;
+                                margin-left: 10px;
+                            }
+                            .list-items {
+                                width: 100%;
+                                display: flex !important;
+                                justify-content: space-around;
                             }
                         }
                         

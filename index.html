@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -16,32 +16,42 @@
 <body>
     <!-- part-0 -->
     <header class="w-100 position-fixed bg-white">
-        <nav class="navbar d-flex">
-            <div class="logo mx-2">
-                <span>Farb</span><span class="logo-in">IN</span>
-                <span class="nav-t">|</span>
-                <img src="./assets/images/0.nav/asset 6.svg" class="nav-t" alt="">
-            </div>
-            <div class="d-flex nav-icons mx-2">
-                <i class="bi bi-bag nav-icon"></i>
-                <i class="bi bi-person nav-icon"></i>
-                <i class="bi bi-search nav-icon search-icon"></i>
-                <div class="menu-btn mt-1">
-                    <div class="menu-btn__burger"></div>
+        <nav class="navbar d-flex flex-column gap-4">
+
+            <div class="nav-just-icon d-flex justify-content-between">
+                <div class="d-flex nav-icons mx-2">
+                    <div class="menu-btn mt-1">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                    <i class="bi bi-search nav-icon search-icon"></i>
+                    <img src="./assets/images/0.nav/person-icon-white.svg" class="nav-icon nav-person" alt="">
+                    <div class="nav-bag"></div>
+
+                </div>
+
+                <div class="logo mx-2">
+                    <span>Farb</span><span class="logo-in">IN</span>
+                    <span class="nav-t">|</span>
+                    <img src="./assets/images/0.nav/asset 6.svg" class="nav-t" alt="">
+                </div>
+                <div class="nav-person"></div>
+                <div class="nav-heart"></div>
+                <div class="heart-person">
+
                 </div>
             </div>
 
-            <ul class="d-none">
-                <li>مردانه</li>
-                <li>زنانه</li>
-                <li>بچگانه</li>
-                <li>ورزشی</li>
-                <li>زیبایی و سلامت</li>
-                <li>خانه و آشپزخانه</li>
-                <li>برند ها</li>
-                <li>کالای دیجیتال</li>
-                <li>کارت هدیه</li>
+            <ul class="list-items d-none">
                 <li>مجله مد</li>
+                <li>کارت هدیه</li>
+                <li>کالای دیجیتال</li>
+                <li>برند ها</li>
+                <li>خانه و آشپزخانه</li>
+                <li>زیبایی و سلامت</li>
+                <li>ورزشی</li>
+                <li>بچگانه</li>
+                <li>زنانه</li>
+                <li>مردانه</li>
             </ul>
         </nav>
     </header>

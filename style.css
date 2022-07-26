@@ -49,16 +49,15 @@
                         
                         .nav-icon {
                             cursor: pointer;
-                            width: 2rem;
+                            width: 1.8rem;
                             font-size: 28px;
                         }
                         
                         .search-icon {
-                            margin: 5px 8px 0px 0px;
+                            margin: 2.8px 8px 0px 0px;
                         }
                         
                         .nav-bag {
-                            width: 2rem;
                             background: url(./assets/images/0.nav/bag-icon-white.svg) no-repeat;
                             display: inline-block;
                         }
@@ -68,7 +67,6 @@
                         }
                         
                         .nav-person {
-                            width: 2rem;
                             background: url(./assets/images/0.nav/person-icon-white.svg) no-repeat;
                         }
                         
@@ -77,7 +75,6 @@
                         }
                         
                         .nav-heart {
-                            width: 2rem;
                             background: url(./assets/images/0.nav/heart-icon-white.svg) no-repeat;
                         }
                         
@@ -139,14 +136,11 @@
                         .menu-btn.open .menu-btn__burger::after {
                             transform: rotate(-45deg) translate(35px, 35px);
                         }
-                        /* .heart-person {
-                            margin-top: 6px;
-                        } */
                         
                         .list-items {
                             list-style-type: none;
                             font-size: .6em;
-                            opacity: .9;
+                            opacity: .85;
                             cursor: pointer;
                         }
                         
@@ -249,11 +243,20 @@
                         /* زیر 992 */
                         
                         @media (max-width: 992px) {
+                            nav {
+                                border-top: 0;
+                            }
                             .nav-t {
                                 display: none;
                             }
                             .list-items {
                                 display: none;
+                            }
+                            .person-heart {
+                                display: none !important;
+                            }
+                            .nav-person-between {
+                                display: flex !important;
                             }
                         }
                         
@@ -271,7 +274,7 @@
                             .list-items {
                                 width: 100%;
                                 display: flex !important;
-                                justify-content: space-around;
+                                justify-content: space-evenly;
                             }
                         }
                         

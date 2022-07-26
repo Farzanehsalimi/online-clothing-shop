@@ -148,12 +148,9 @@
                             color: #2fbbff;
                         }
                         
-                        .carousel {
-                            margin-top: 4rem;
+                        .carousel-img {
+                            border-radius: 8px;
                         }
-                        /* .carousel-img {
-        width: 350px;
-    } */
                         
                         .product-img {
                             border: 2rem;

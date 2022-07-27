@@ -19,9 +19,11 @@
                         header {
                             position: fixed;
                             top: 0;
+                            width: 100%;
                         }
                         
                         nav {
+                            overflow: hidden;
                             padding: 0 !important;
                             border-top: 2.2px solid #000;
                             border-bottom: 1px solid #d3d3d3;
@@ -167,22 +169,29 @@
                             font-size: 1em;
                         }
                         
-                        .type-of-product-img {
-                            width: 7rem;
+                        .t-o-p-div {}
+                        
+                        .type-of-products {
+                            width: 95%;
+                            margin: 0 auto;
+                        }
+                        
+                        .type-of-products-img {
+                            width: 8rem;
                         }
                         
                         .farsi-title {
-                            font-size: 1.1em;
+                            font-size: 1em;
                         }
                         
                         .english-title {
-                            font-size: 1.6em;
+                            font-size: 1.4em;
                         }
                         
                         .services {}
                         
                         .services-img {
-                            width: 100%;
+                            /* width: 100%; */
                         }
                         
                         .services,
@@ -221,16 +230,14 @@
                                 display: none !important;
                             }
                             .type-of-products {
-                                width: 100%;
-                                justify-content: center;
                                 flex-direction: row !important;
                             }
                             .t-o-p-div {
                                 flex-direction: column;
                                 gap: 2rem;
                             }
-                            .type-of-product-img {
-                                width: 13rem;
+                            .type-of-products-img {
+                                width: 95% !important;
                             }
                             .services {
                                 gap: 2rem;
@@ -239,6 +246,9 @@
                         /* زیر 992 */
                         
                         @media (max-width: 992px) {
+                            header {
+                                position: static !important;
+                            }
                             nav {
                                 border-top: 0;
                             }

@@ -2,7 +2,7 @@
 window.onscroll = function() { myFunction() };
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementsByClassName("navbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -30,27 +30,29 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-// $(document).ready(function() {
-//     $(".owl-carousel").owlCarousel();
-// });
+$(document).ready(function() {
+    $(".owl-carousel").owlCarousel();
+});
 
-// var owl = $('.owl-carousel');
-// owl.owlCarousel({
-//     items: 1,
-//     loop: true,
-//     margin: 18,
-//     stagePadding: 50,
-//     autoplay: true,
-//     autoplayTimeout: 1000,
-//     autoplayHoverPause: true,
-//     responsive: {
-//         0: {
-//             stagePadding: 0,
+let owl = $('.owl-carousel');
+owl.owlCarousel({
+    items: 1,
+    loop: true,
+    rtl: true,
+    margin: 18,
+    stagePadding: 50,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    dots: false,
+    responsive: {
+        0: {
+            stagePadding: 0,
 
-//         },
-//         768: {}
-//     }
-// });
+        },
+        768: {}
+    }
+});
 // $('.play').on('click', function() {
 //     owl.trigger('play.owl.autoplay', [1000])
 // })

@@ -32,7 +32,7 @@
                         
                         .nav-just-icon {
                             width: 95%;
-                            margin: 10px 0 0 0;
+                            margin: 8px 0 0 0;
                         }
                         
                         .logo {
@@ -53,6 +53,7 @@
                             cursor: pointer;
                             width: 1.8rem;
                             font-size: 28px;
+                            transition: .2s;
                         }
                         
                         .search-icon {
@@ -141,7 +142,7 @@
                         
                         .list-items {
                             list-style-type: none;
-                            font-size: .6em;
+                            font-size: .65em;
                             opacity: .85;
                             cursor: pointer;
                         }
@@ -272,6 +273,9 @@
                             }
                             .nav-person-between {
                                 display: flex !important;
+                            }
+                            .owl-carousel {
+                                margin: .8rem 0 2rem 0;
                             }
                         }
                         

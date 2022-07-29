@@ -42,7 +42,7 @@ owl.owlCarousel({
     margin: 18,
     stagePadding: 50,
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 1200,
     autoplayHoverPause: true,
     dots: false,
     responsive: {

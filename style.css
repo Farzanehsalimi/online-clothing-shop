@@ -1,5 +1,5 @@
                         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap');
-                        @import url('https://v1.fontapi.ir/css/Yekan:400;700');
+                        @import url('https://v1.fontapi.ir/css/Yekan:100,200,300@400');
                         * {
                             box-sizing: border-box;
                             margin: 0;
@@ -156,7 +156,7 @@
                         }
                         
                         .carousel-img {
-                            border-radius: 8px;
+                            border-radius: 5px;
                         }
                         
                         .product-img {
@@ -164,50 +164,56 @@
                         }
                         
                         .brands {
-                            margin-bottom: 4rem;
+                            width: 90%;
+                            margin: 0 auto;
                         }
                         
                         .brand-logos {
-                            width: 8%;
-                            opacity: .4;
-                            margin-top: 5rem;
+                            width: 7%;
+                            opacity: .2;
                         }
                         
                         .button {
-                            width: 100%;
-                            padding: 16px 0px 16px 0px;
+                            width: 92%;
+                            padding: 12px 0px 12px 0px;
                             font-size: 1em;
                         }
                         
                         .t-o-p-div {}
                         
                         .type-of-products {
-                            width: 95%;
+                            width: 90%;
                             margin: 0 auto;
+                            margin-top: 2rem;
                         }
                         
                         .type-of-products-img {
-                            width: 8rem;
+                            width: 6rem;
                         }
                         
                         .farsi-title {
-                            font-size: 1em;
+                            font-size: .9em;
                         }
                         
                         .english-title {
                             font-size: 1.4em;
                         }
                         
-                        .services {}
+                        .services {
+                            width: 100%;
+                            margin: 0 auto;
+                            margin-top: 5rem;
+                        }
                         
                         .services-img {
-                            /* width: 100%; */
+                            width: 70%;
                         }
                         
                         .services,
-                        p {
+                        h4 {
+                            font-weight: 400;
                             text-align: center;
-                            font-size: .9em;
+                            font-size: .7em;
                         }
                         
                         .t-o-p-img {
@@ -230,9 +236,16 @@
                             .brand-logos {
                                 display: none;
                             }
-                            .button {
-                                margin-top: 4rem;
+                            .services-p {
+                                display: none;
                             }
+                            .services,
+                            h4 {
+                                font-weight: 400;
+                                text-align: center;
+                                /* font-size: .7em; */
+                            }
+                            .button {}
                         }
                         
                         @media (min-width: 768px) {
@@ -246,11 +259,32 @@
                                 flex-direction: column;
                                 gap: 2rem;
                             }
+                            .services {
+                                width: 85%;
+                                gap: 0rem;
+                            }
+                            .services-img {
+                                width: 6rem;
+                                gap: 0 !important;
+                            }
+                            .services,
+                            h4 {
+                                font-size: 1.1em;
+                            }
+                            .services,
+                            p {
+                                font-size: .8em !important;
+                                font-weight: 200;
+                                line-height: 1.2rem;
+                            }
+                            .farsi-title {
+                                font-size: 1.2em;
+                            }
+                            .english-title {
+                                font-size: 1.6em;
+                            }
                             .type-of-products-img {
                                 width: 95% !important;
-                            }
-                            .services {
-                                gap: 2rem;
                             }
                         }
                         /* زیر 992 */

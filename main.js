@@ -47,7 +47,7 @@ owl.owlCarousel({
     dots: false,
     responsive: {
         0: {
-            stagePadding: 0,
+            stagePadding: 14,
 
         },
         768: {}

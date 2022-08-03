@@ -31,7 +31,7 @@
                         }
                         
                         .nav-just-icon {
-                            width: 95%;
+                            width: 90%;
                             margin: 8px 0 0 0;
                         }
                         
@@ -51,13 +51,13 @@
                         
                         .nav-icon {
                             cursor: pointer;
-                            width: 1.8rem;
+                            width: 2rem;
                             font-size: 28px;
                             transition: .2s;
                         }
                         
                         .search-icon {
-                            margin: 2.8px 8px 0px 0px;
+                            margin: 4px 8px 0px 0px;
                         }
                         
                         .nav-bag {
@@ -142,13 +142,13 @@
                         
                         .list-items {
                             list-style-type: none;
-                            font-size: .65em;
-                            opacity: .85;
+                            font-size: .7em;
+                            opacity: .7;
                             cursor: pointer;
                         }
                         
                         .list-items>li:hover {
-                            color: #2fbbff;
+                            color: #47b6ee;
                         }
                         
                         .owl-carousel {
@@ -173,6 +173,11 @@
                             opacity: .2;
                         }
                         
+                        .brand-logos:hover {
+                            opacity: 1;
+                            cursor: pointer;
+                        }
+                        
                         .button {
                             width: 92%;
                             padding: 12px 0px 12px 0px;
@@ -182,7 +187,7 @@
                         .t-o-p-div {}
                         
                         .type-of-products {
-                            width: 90%;
+                            width: 92%;
                             margin: 0 auto;
                             margin-top: 2rem;
                         }
@@ -202,7 +207,7 @@
                         .services {
                             width: 100%;
                             margin: 0 auto;
-                            margin-top: 5rem;
+                            margin-top: 4rem;
                         }
                         
                         .services-img {
@@ -260,7 +265,7 @@
                                 gap: 2rem;
                             }
                             .services {
-                                width: 85%;
+                                width: 90%;
                                 gap: 0rem;
                             }
                             .services-img {
@@ -299,6 +304,9 @@
                             .nav-t {
                                 display: none;
                             }
+                            .nav-just-icon {
+                                width: 95%;
+                            }
                             .list-items {
                                 display: none;
                             }
@@ -325,7 +333,7 @@
                                 margin-left: 10px;
                             }
                             .list-items {
-                                width: 100%;
+                                width: 92%;
                                 display: flex !important;
                                 justify-content: space-evenly;
                             }

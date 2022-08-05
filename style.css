@@ -184,7 +184,12 @@
                             font-size: 1em;
                         }
                         
-                        .t-o-p-div {}
+                        .t-o-p-div:hover {
+                            cursor: pointer;
+                            transition: .4s;
+                            transform: scale(.98);
+                            box-shadow: none;
+                        }
                         
                         .type-of-products {
                             width: 92%;

@@ -1,349 +1,374 @@
-                        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap');
-                        @import url('https://v1.fontapi.ir/css/Yekan:100,200,300@400');
-                        * {
-                            box-sizing: border-box;
-                            margin: 0;
-                            padding: 0;
-                            font-family: 'Yekan', sans-serif;
-                        }
-                        
-                         :root {
-                            --primaryColor: #4A148C;
-                            --mainWhite: #fff;
-                            --mainBlack: #000;
-                            --mainGreen: #f8faf9;
-                            --mainBlue: #f8f9fb;
-                            --mainGray: #7d7d7d;
-                        }
-                        
-                        header {
-                            position: fixed;
-                            top: 0;
-                            width: 100%;
-                            z-index: 20;
-                        }
-                        
-                        nav {
-                            /* overflow: hidden; */
-                            padding: 0 !important;
-                            border-top: 2.2px solid #000;
-                            border-bottom: 1px solid #d3d3d3;
-                        }
-                        
-                        .nav-just-icon {
-                            width: 90%;
-                            margin: 8px 0 0 0;
-                        }
-                        
-                        .logo {
-                            font-size: 2.2em;
-                            font-weight: 500;
-                            font-family: Open Sans;
-                        }
-                        
-                        .logo-in {
-                            font-weight: 600;
-                        }
-                        
-                        .nav-icons {
-                            gap: 1rem;
-                        }
-                        
-                        .nav-icon {
-                            cursor: pointer;
-                            width: 2rem;
-                            font-size: 28px;
-                            transition: .2s;
-                        }
-                        
-                        .search-icon {
-                            margin: 4px 8px 0px 0px;
-                        }
-                        
-                        .nav-bag {
-                            background: url(./assets/images/0.nav/bag-icon-white.svg) no-repeat;
-                            display: inline-block;
-                        }
-                        
-                        .nav-bag:hover {
-                            background: url(./assets/images/0.nav/bag-icon-black.svg) no-repeat;
-                        }
-                        
-                        .nav-person {
-                            background: url(./assets/images/0.nav/person-icon-white.svg) no-repeat;
-                        }
-                        
-                        .nav-person:hover {
-                            background: url(./assets/images/0.nav/person-icon-black.svg) no-repeat;
-                        }
-                        
-                        .nav-heart {
-                            background: url(./assets/images/0.nav/heart-icon-white.svg) no-repeat;
-                        }
-                        
-                        .nav-heart:hover {
-                            background: url(./assets/images/0.nav/heart-icon-black.svg) no-repeat;
-                        }
-                        
-                        .menu-btn {
-                            position: relative;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 40px;
-                            height: 40px;
-                            cursor: pointer;
-                            transition: all .5s ease-in-out;
-                        }
-                        
-                        .menu-btn__burger {
-                            width: 30px;
-                            height: 2px;
-                            background: #fff;
-                            border-radius: 5px;
-                            transition: all .5s ease-in-out;
-                            background-color: #000;
-                        }
-                        
-                        .menu-btn__burger::before,
-                        .menu-btn__burger::after {
-                            content: '';
-                            position: absolute;
-                            width: 30px;
-                            height: 2px;
-                            background: #fff;
-                            border-radius: 5px;
-                            transition: all .5s ease-in-out;
-                            background-color: #000;
-                        }
-                        
-                        .menu-btn__burger::before {
-                            transform: translateY(-10px);
-                        }
-                        
-                        .menu-btn__burger::after {
-                            transform: translateY(10px);
-                        }
-                        /* Animation */
-                        
-                        .menu-btn.open .menu-btn__burger {
-                            transform: translateX(-50px);
-                            background: transparent;
-                            box-shadow: none;
-                        }
-                        
-                        .menu-btn.open .menu-btn__burger::before {
-                            transform: rotate(45deg) translate(35px, -35px);
-                        }
-                        
-                        .menu-btn.open .menu-btn__burger::after {
-                            transform: rotate(-45deg) translate(35px, 35px);
-                        }
-                        
-                        .list-items {
-                            list-style-type: none;
-                            font-size: .7em;
-                            opacity: .7;
-                            cursor: pointer;
-                        }
-                        
-                        .list-items>li:hover {
-                            color: #47b6ee;
-                        }
-                        
-                        .owl-carousel {
-                            margin: 9rem 0 2rem 0;
-                        }
-                        
-                        .carousel-img {
-                            border-radius: 5px;
-                        }
-                        
-                        .product-img {
-                            border: 2rem;
-                        }
-                        
-                        .brands {
-                            width: 90%;
-                            margin: 0 auto;
-                        }
-                        
-                        .brand-logos {
-                            width: 7%;
-                            opacity: .2;
-                        }
-                        
-                        .brand-logos:hover {
-                            opacity: 1;
-                            cursor: pointer;
-                        }
-                        
-                        .button {
-                            width: 92%;
-                            padding: 12px 0px 12px 0px;
-                            font-size: 1em;
-                        }
-                        
-                        .t-o-p-div:hover {
-                            cursor: pointer;
-                            transition: .4s;
-                            transform: scale(.98);
-                            box-shadow: none;
-                        }
-                        
-                        .type-of-products {
-                            width: 92%;
-                            margin: 0 auto;
-                            margin-top: 2rem;
-                        }
-                        
-                        .type-of-products-img {
-                            width: 6rem;
-                        }
-                        
-                        .farsi-title {
-                            font-size: .9em;
-                        }
-                        
-                        .english-title {
-                            font-size: 1.4em;
-                        }
-                        
-                        .services {
-                            width: 100%;
-                            margin: 0 auto;
-                            margin-top: 4rem;
-                        }
-                        
-                        .services-img {
-                            width: 70%;
-                        }
-                        
-                        .services,
-                        h4 {
-                            font-weight: 400;
-                            text-align: center;
-                            font-size: .7em;
-                        }
-                        
-                        .t-o-p-img {
-                            width: 100%;
-                        }
-                        
-                        .sportwear-img {
-                            width: 100%;
-                        }
-                        
-                        .lorem {
-                            margin-top: 100rem;
-                        }
-                        /* بالای 576 */
-                        
-                        @media (min-width: 576px) {}
-                        /* زیر 768 */
-                        
-                        @media only screen and (max-width: 768px) {
-                            .brand-logos {
-                                display: none;
-                            }
-                            .services-p {
-                                display: none;
-                            }
-                            .services,
-                            h4 {
-                                font-weight: 400;
-                                text-align: center;
-                                /* font-size: .7em; */
-                            }
-                            .button {}
-                        }
-                        
-                        @media (min-width: 768px) {
-                            .button {
-                                display: none !important;
-                            }
-                            .type-of-products {
-                                flex-direction: row !important;
-                            }
-                            .t-o-p-div {
-                                flex-direction: column;
-                                gap: 2rem;
-                            }
-                            .services {
-                                width: 90%;
-                                gap: 0rem;
-                            }
-                            .services-img {
-                                width: 6rem;
-                                gap: 0 !important;
-                            }
-                            .services,
-                            h4 {
-                                font-size: 1.1em;
-                            }
-                            .services,
-                            p {
-                                font-size: .8em !important;
-                                font-weight: 200;
-                                line-height: 1.2rem;
-                            }
-                            .farsi-title {
-                                font-size: 1.2em;
-                            }
-                            .english-title {
-                                font-size: 1.6em;
-                            }
-                            .type-of-products-img {
-                                width: 95% !important;
-                            }
-                        }
-                        /* زیر 992 */
-                        
-                        @media (max-width: 992px) {
-                            header {
-                                position: static !important;
-                            }
-                            nav {
-                                border-top: 0;
-                            }
-                            .nav-t {
-                                display: none;
-                            }
-                            .nav-just-icon {
-                                width: 95%;
-                            }
-                            .list-items {
-                                display: none;
-                            }
-                            .person-heart {
-                                display: none !important;
-                            }
-                            .nav-person-between {
-                                display: flex !important;
-                            }
-                            .owl-carousel {
-                                margin: .8rem 0 2rem 0;
-                            }
-                        }
-                        
-                        @media (min-width: 992px) {
-                            .nav-t {
-                                width: 30px;
-                            }
-                            .menu-btn {
-                                display: none;
-                            }
-                            .heart-icon {
-                                font-size: 28px;
-                                margin-left: 10px;
-                            }
-                            .list-items {
-                                width: 92%;
-                                display: flex !important;
-                                justify-content: space-evenly;
-                            }
-                        }
-                        
-                        @media (min-width: 1200px) {}
-                        
-                        @media (max-width: 1400px) {}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Square+Peg&display=swap");
+@import url("https://v1.fontapi.ir/css/Yekan:100,200,300@400");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Yekan", sans-serif;
+}
+
+:root {
+  --primaryColor: #4a148c;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainGreen: #f8faf9;
+  --mainBlue: #f8f9fb;
+  --mainGray: #7d7d7d;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+nav {
+  /* overflow: hidden; */
+  padding: 0 !important;
+  border-top: 2.2px solid #000;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.nav-just-icon {
+  width: 90%;
+  margin: 8px 0 0 0;
+}
+
+.logo {
+  font-size: 2.2em;
+  font-weight: 500;
+  font-family: Open Sans;
+}
+
+.logo-in {
+  font-weight: 600;
+}
+
+.nav-icons {
+  gap: 1rem;
+}
+
+.nav-icon {
+  cursor: pointer;
+  width: 2rem;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+.search-icon {
+  margin: 4px 8px 0px 0px;
+}
+
+.nav-bag {
+  background: url(./assets/images/0.nav/bag-icon-white.svg) no-repeat;
+  display: inline-block;
+}
+
+.nav-bag:hover {
+  background: url(./assets/images/0.nav/bag-icon-black.svg) no-repeat;
+}
+
+.nav-person {
+  background: url(./assets/images/0.nav/person-icon-white.svg) no-repeat;
+}
+
+.nav-person:hover {
+  background: url(./assets/images/0.nav/person-icon-black.svg) no-repeat;
+}
+
+.nav-heart {
+  background: url(./assets/images/0.nav/heart-icon-white.svg) no-repeat;
+}
+
+.nav-heart:hover {
+  background: url(./assets/images/0.nav/heart-icon-black.svg) no-repeat;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  background-color: #000;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  background-color: #000;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-10px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(10px);
+}
+/* Animation */
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.list-items {
+  list-style-type: none;
+  font-size: 0.7em;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.list-items > li:hover {
+  color: #47b6ee;
+}
+
+.owl-carousel {
+  margin: 9rem 0 2rem 0;
+}
+
+.carousel-img {
+  border-radius: 5px;
+}
+
+.product-img {
+  border: 2rem;
+}
+
+.brands {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.brand-logos {
+  width: 7%;
+  opacity: 0.2;
+}
+
+.brand-logos:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.button {
+  width: 92%;
+  padding: 12px 0px 12px 0px;
+  font-size: 1em;
+}
+
+.t-o-p-div:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+.type-of-products {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.type-of-products-img {
+  width: 6rem;
+}
+
+.farsi-title {
+  font-size: 0.9em;
+}
+
+.english-title {
+  font-size: 1.4em;
+}
+
+.services {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.services-img {
+  width: 70%;
+}
+
+.services,
+h4 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.t-o-p-img {
+  width: 100%;
+}
+
+.sportwear-img {
+  width: 100%;
+}
+
+.price-img{
+    width: 60%;
+}
+
+.lorem {
+  margin-top: 100rem;
+}
+/* بالای 576 */
+
+@media (min-width: 576px) {
+}
+/* زیر 768 */
+
+@media only screen and (max-width: 768px) {
+  .brand-logos {
+    display: none;
+  }
+  .services-p {
+    display: none;
+  }
+  .services,
+  h4 {
+    font-weight: 400;
+    text-align: center;
+    /* font-size: .7em; */
+  }
+  .t-o-p-img-jean {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    display: none !important;
+  }
+  .type-of-products {
+    flex-direction: row !important;
+  }
+  .t-o-p-div {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .services {
+    width: 90%;
+    gap: 0rem;
+  }
+  .services-img {
+    width: 6rem;
+    gap: 0 !important;
+  }
+  .services,
+  h4 {
+    font-size: 1.1em;
+  }
+  .services,
+  p {
+    font-size: 0.8em !important;
+    font-weight: 200;
+    line-height: 1.2rem;
+  }
+  .farsi-title {
+    font-size: 1.2em;
+  }
+  .english-title {
+    font-size: 1.6em;
+  }
+  .type-of-products-img {
+    width: 95% !important;
+  }
+}
+/* زیر 992 */
+
+@media (max-width: 992px) {
+  header {
+    position: static !important;
+  }
+  nav {
+    border-top: 0;
+  }
+  .nav-t {
+    display: none;
+  }
+  .nav-just-icon {
+    width: 95%;
+  }
+  .list-items {
+    display: none;
+  }
+  .person-heart {
+    display: none !important;
+  }
+  .nav-person-between {
+    display: flex !important;
+  }
+  .owl-carousel {
+    margin: 0.8rem 0 2rem 0;
+  }
+  .sale-box {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-t {
+    width: 30px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .heart-icon {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+  .list-items {
+    width: 92%;
+    display: flex !important;
+    justify-content: space-evenly;
+  }
+  .sale-box {
+    border: 1px solid;
+  }
+  .up-to-text {
+    font-size: 1.6em;
+    font-weight: 100;
+  }
+  .button-t-o-p {
+    width: 70%;
+    height: 2.6rem;
+    font-size: 0.8em;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1400px) {
+}

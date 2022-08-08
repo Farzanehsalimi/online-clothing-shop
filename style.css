@@ -234,8 +234,16 @@ h4 {
   width: 100%;
 }
 
+.price{
+/* width: 90%; */
+}
+
+.price-imgs{
+  margin: 0 auto;
+}
+
 .price-img{
-    width: 60%;
+    width: 45%;
 }
 
 .lorem {

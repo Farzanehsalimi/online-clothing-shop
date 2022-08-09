@@ -20,11 +20,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 2;
 }
 
 nav {
-  /* overflow: hidden; */
   padding: 0 !important;
   border-top: 2.2px solid #000;
   border-bottom: 1px solid #d3d3d3;
@@ -151,12 +150,45 @@ nav {
   color: #47b6ee;
 }
 
-.owl-carousel {
+.o-c-one {
   margin: 9rem 0 2rem 0;
 }
 
+.o-c-two {
+  transform: rotate(90deg);
+  width: 270px;
+  margin-top: 4rem;
+}
+
+.owl-nav{
+  display: none;
+}
+
+.item {
+  transform: rotate(-90deg);
+}
+
+/* .item {
+  transform: rotate(-90deg);
+}
+.owl-two{
+   transform: rotate(90deg);
+} */
+
 .carousel-img {
   border-radius: 5px;
+}
+
+.hr-carousel{
+  margin-left:1rem;
+}
+
+.owl-two-img{
+  width: 100% !important;
+}
+
+.owl-three-img{
+  width: 40%;
 }
 
 .product-img {
@@ -234,16 +266,27 @@ h4 {
   width: 100%;
 }
 
-.price{
-/* width: 90%; */
+
+.h4-price{
+font-size: 1em;
+font-weight: 100;
+text-align: right;
+}
+
+hr{
+  opacity: .1;
+}
+
+.span-price{
+font-size: .8em;
 }
 
 .price-imgs{
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
-.price-img{
-    width: 45%;
+.users{
+  margin-top: 6rem;
 }
 
 .lorem {
@@ -271,6 +314,15 @@ h4 {
   .t-o-p-img-jean {
     display: none;
   }
+  .price-img{
+    width: 40%;
+}
+.price-imgs {
+  gap: 2rem;
+}
+.user-carousel{
+  display: none;
+}
 }
 
 @media (min-width: 768px) {
@@ -315,9 +367,6 @@ h4 {
 /* زیر 992 */
 
 @media (max-width: 992px) {
-  header {
-    position: static !important;
-  }
   nav {
     border-top: 0;
   }
@@ -336,7 +385,7 @@ h4 {
   .nav-person-between {
     display: flex !important;
   }
-  .owl-carousel {
+  .o-c-one {
     margin: 0.8rem 0 2rem 0;
   }
   .sale-box {

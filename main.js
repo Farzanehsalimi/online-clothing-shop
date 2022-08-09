@@ -30,12 +30,32 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-$(document).ready(function() {
-    $(".owl-carousel").owlCarousel();
-});
+// $(document).ready(function() {
+//     $(".owl-carousel").owlCarousel();
+// });
 
-let owl = $('.owl-carousel');
-owl.owlCarousel({
+// let owl = $('.owl-carousel');
+// owl.owlCarousel({
+//     items: 1,
+//     loop: true,
+//     rtl: true,
+//     margin: 18,
+//     stagePadding: 50,
+//     autoplay: true,
+//     autoplayTimeout: 1200,
+//     autoplayHoverPause: true,
+//     dots: false,
+//     responsive: {
+//         0: {
+//             stagePadding: 14,
+
+//         },
+//         768: {}
+//     }
+// });
+
+$(document).ready(function(){
+    $('.owl-one').owlCarousel({
     items: 1,
     loop: true,
     rtl: true,
@@ -45,17 +65,53 @@ owl.owlCarousel({
     autoplayTimeout: 1200,
     autoplayHoverPause: true,
     dots: false,
+    navigation : false ,
     responsive: {
         0: {
             stagePadding: 14,
-
         },
         768: {}
     }
 });
-// $('.play').on('click', function() {
-//     owl.trigger('play.owl.autoplay', [1000])
-// })
-// $('.stop').on('click', function() {
-//     owl.trigger('stop.owl.autoplay')
-// })
+
+$('.owl-two').owlCarousel({
+    items: 1,
+    loop: true,
+    rtl: true,
+    autoplay: true,
+    autoplayTimeout: 1400,
+    autoplayHoverPause: true,
+    dots: false,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    rewind: true,
+    margin:0,
+    nav: true,
+    responsive: {
+        // 0: {
+        //     stagePadding: 14,
+
+        // },
+        // 768: {}
+    }
+    });
+
+    $('.owl-three').owlCarousel({
+        items: 3,
+        loop: true,
+        rtl: true,
+        margin: 18,
+        autoplay: true,
+        autoplayTimeout: 1400,
+        autoplayHoverPause: true,
+        dots: false,
+        navigation : false ,
+        responsive: {
+            0: {
+                stagePadding: 14,
+            },
+            768: {}
+        }
+    });
+});

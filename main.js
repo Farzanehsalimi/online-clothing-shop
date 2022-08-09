@@ -16,7 +16,6 @@ function myFunction() {
     }
 }
 
-
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -88,17 +87,10 @@ $('.owl-two').owlCarousel({
     rewind: true,
     margin:0,
     nav: true,
-    responsive: {
-        // 0: {
-        //     stagePadding: 14,
-
-        // },
-        // 768: {}
-    }
-    });
+});
 
     $('.owl-three').owlCarousel({
-        items: 3,
+        items: 1,
         loop: true,
         rtl: true,
         margin: 18,
@@ -109,9 +101,13 @@ $('.owl-two').owlCarousel({
         navigation : false ,
         responsive: {
             0: {
-                stagePadding: 14,
+           },
+            768: {
+                items:2,
             },
-            768: {}
+            1024:{
+items:3,
+            },
         }
     });
 });

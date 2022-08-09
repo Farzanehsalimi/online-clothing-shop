@@ -189,6 +189,7 @@ nav {
 
 .owl-three-img{
   width: 40%;
+  border-radius: 5%;
 }
 
 .product-img {
@@ -274,7 +275,7 @@ text-align: right;
 }
 
 hr{
-  opacity: .1;
+  opacity: .15;
 }
 
 .span-price{
@@ -289,9 +290,47 @@ font-size: .8em;
   margin-top: 6rem;
 }
 
-.lorem {
-  margin-top: 100rem;
+.footer-app-imgs{
+padding-top: 2rem;}
+
+.footer-app-img{
+  width: 45%;
 }
+
+.footer-icon{
+font-size: 2em;}
+
+.footer-news{
+  text-align: right;
+}
+
+.footer-news > h5{
+font-size: 1.2em;}
+
+.footer-news > p{
+  font-size: .85em;
+opacity: .7;
+}
+
+.member-of{
+  margin: 5rem 0 4rem 0rem;
+}
+
+.member-of-img{
+  width: 40%;
+}
+
+.copyright{
+  font-size: 1.6em;
+  line-height: 1em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* .lorem{
+margin-top: 10rem;  
+} */
 /* بالای 576 */
 
 @media (min-width: 576px) {
@@ -326,7 +365,7 @@ font-size: .8em;
 }
 
 @media (min-width: 768px) {
-  .button {
+  .button-download {
     display: none !important;
   }
   .type-of-products {

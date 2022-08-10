@@ -447,10 +447,13 @@ margin-top: 10rem;
     display: flex;
   }
   .footer-part1 {
-    width: 90%;
+    width: 80%;
+  }
+  .footer-app-img {
+    width: 35%;
   }
   .member-of-img {
-    width: 35%;
+    width: 30%;
   }
   .email-line {
     width: 95%;

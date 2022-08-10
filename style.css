@@ -204,7 +204,7 @@ nav {
 }
 
 .button {
-  width: 92%;
+  width: 90%;
   padding: 12px 0px 12px 0px;
   font-size: 1em;
 }
@@ -399,6 +399,9 @@ margin-top: 10rem;
   .o-c-one {
     margin-top: 9rem !important;
   }
+  .button {
+    width: 95%;
+  }
   .button-download {
     display: none !important;
   }
@@ -448,6 +451,9 @@ margin-top: 10rem;
   }
   .member-of-img {
     width: 35%;
+  }
+  .email-line {
+    width: 95%;
   }
 }
 /* زیر 992 */
